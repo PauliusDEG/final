@@ -1,0 +1,18 @@
+#product-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 250px;
+    margin-top: 50px;
+}
+
+
+.delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    background-color: rgb(255, 143, 143);
+    color: rgb(67, 66, 66);
+}

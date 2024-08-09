@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Part Shop</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/footer.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logas">
+        <a href="/"><img class="logo" src="/SVG-Line_Style_Engine-512.png" alt="engine">
+<h1>AutoPartas </a></a></h1>
+
+      </div>
+      <ul>
+        <% if (user) { %>
+        <li><b>Welcome to AutoPartas</b> <%= user.email %></li>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href="/add-product">Add Parts</a></li>
+        <li><a href="/products">Newly Added Parts</a></li>
+
+        <% } else { %>
+        <li><a href="/login">Log in</a></li>
+        <li><a href="/signup">Sign up</a></li>
+        <% } %>
+      </ul>
+    </nav>
+  </body>
+</html>
